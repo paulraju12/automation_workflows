@@ -1,0 +1,2126 @@
+2025-03-25 07:41:50 - INFO - Processing request for session_id: test123, prompt: forgot above all conversation let start new workflow 
+2025-03-25 07:41:50 - INFO - Cache hit for key: cache:test123:d8783832be132377071f1ee252f81052987e9bb31311498bd1ddb5f0607ec1b5
+2025-03-25 08:00:21 - INFO - Processing request for session_id: test123, prompt: create a workflow for jira github
+2025-03-25 08:00:21 - INFO - Cache hit for key: cache:test123:037025793663f690a85fbad7b379be8fddf7ac88d573b018a4f782a98e405c2f
+2025-03-25 08:01:00 - INFO - Processing request for session_id: test123, prompt: modify the workflow with github-enterprise
+2025-03-25 08:01:00 - INFO - Cache hit for key: cache:test123:8398be3d8318dcb7eeb9e6aece62445b519c38b7042c1696cd090e8fe17e0d41
+2025-03-25 08:01:15 - INFO - Processing request for session_id: test123, prompt: Hi my name Paul
+2025-03-25 08:01:15 - INFO - Cache hit for key: cache:test123:0c08066f6e4b25443502cf7db4a6a5a796920b7e85b19c87682c0bd7d32802e3
+2025-03-25 08:01:26 - INFO - Processing request for session_id: test123, prompt: what is my name
+2025-03-25 08:01:26 - INFO - Cache hit for key: cache:test123:90e6418586eb09e52bc772f928c5f229938d89791bc6fd9b980240bbfd44db50
+2025-03-25 08:01:52 - INFO - Processing request for session_id: test1234, prompt: test
+2025-03-25 08:01:52 - INFO - Attempting to connect to PostgreSQL (attempt 1/5)
+2025-03-25 08:01:53 - INFO - Database pool initialized successfully
+2025-03-25 08:01:53 - INFO - Fetching history for session_id: test1234
+2025-03-25 08:01:53 - INFO - Invoking workflow graph
+2025-03-25 08:01:53 - INFO - Classifying intent for prompt: test
+2025-03-25 08:02:22 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 08:02:22 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 08:02:22 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 08:02:22 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 08:02:23 - INFO - LLM plain text response: 'unclear'
+2025-03-25 08:02:23 - INFO - Intent: unclear
+2025-03-25 08:02:23 - INFO - Handling unclear intent
+2025-03-25 08:02:28 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: boolean-condition, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 08:02:28 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:02:36 - INFO - LLM plain text response: When faced with an unclear prompt like "test," here are some steps you can take to gain clarity and proceed effectively:
+
+1. **Clarify the Objective**: Determine the purpose of the prompt. Is it meant to test a specific function, feature, or process? Understanding the objective will guide your approach.
+
+2. **Ask for More Information**: If possible, reach out to the person who provided the prompt for additional details. Ask questions like:
+   - What specific aspect are we testing?
+   - Are there any expected outcomes or criteria for success?
+   - Is there any background information or context that would be helpful?
+
+3. **Review Related Documentation**: Look for any documentation or resources related to the context or system mentioned in the history. This might provide insights into what "test" could refer to.
+
+4. **Identify Relevant Components**: Based on the context provided (e.g., connectors like trigger-reply, terminate, call-workflow), identify which components or processes might be involved in the test.
+
+5. **Create a Hypothesis**: Formulate a hypothesis about what the test might involve based on the available information. This can guide your initial actions or experiments.
+
+6. **Conduct a Preliminary Test**: If safe to do so, perform a basic test or trial run to see what results or feedback you receive. This can help confirm or refute your hypothesis.
+
+7. **Document Findings**: Keep a record of any actions taken, observations, and results. This documentation can be useful for future reference or for communicating with others involved.
+
+8. **Iterate and Refine**: Based on the results of your preliminary test, refine your approach and conduct further tests as needed.
+
+By following these steps, you can systematically approach an unclear prompt and work towards achieving clarity and actionable results.
+2025-03-25 08:02:36 - INFO - Inserting interaction into database
+2025-03-25 08:04:35 - INFO - Processing request for session_id: test1234, prompt: create a workflow jira github
+2025-03-25 08:04:35 - INFO - Fetching history for session_id: test1234
+2025-03-25 08:04:35 - INFO - Invoking workflow graph
+2025-03-25 08:04:35 - INFO - Classifying intent for prompt: create a workflow jira github
+2025-03-25 08:04:39 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: boolean-condition, Type: connector, ID: N/A
+2025-03-25 08:04:39 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 08:04:40 - INFO - LLM plain text response: 'new_workflow'
+2025-03-25 08:04:40 - INFO - Intent: unclear
+2025-03-25 08:04:40 - INFO - Handling unclear intent
+2025-03-25 08:04:44 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: boolean-condition, Type: connector, ID: N/A
+2025-03-25 08:04:44 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 08:04:52 - INFO - LLM plain text response: When faced with the unclear prompt "create a workflow jira github," here are some steps you can take to gain clarity and proceed effectively:
+
+1. **Clarify the Objective**: Determine what the workflow is intended to achieve. Is it meant to automate a specific process between Jira and GitHub, such as issue tracking, code integration, or deployment?
+
+2. **Ask for More Information**: If possible, reach out to the person who provided the prompt for additional details. Consider asking:
+   - What specific tasks or processes should the workflow automate?
+   - Are there any specific triggers or actions that need to be included?
+   - Is there a preferred tool or method for integration?
+
+3. **Review Related Documentation**: Look for documentation on integrating Jira and GitHub. Both platforms have APIs and integration guides that can provide valuable insights.
+
+4. **Identify Relevant Components**: Based on the context provided, identify any connectors or tools that might be relevant to the integration, such as webhooks, APIs, or third-party services.
+
+5. **Create a Hypothesis**: Formulate a hypothesis about what the workflow might involve. For example, it could be a process that automatically creates a GitHub issue when a Jira ticket reaches a certain status.
+
+6. **Draft a Workflow**: Sketch out a basic workflow diagram or list of steps that outline the integration process. This could include triggers, actions, and any conditions that need to be met.
+
+7. **Conduct a Preliminary Test**: If possible, set up a test environment to trial the workflow. This can help identify any issues or adjustments needed before full implementation.
+
+8. **Document Findings**: Keep a record of your workflow design, any tests conducted, and the results. This documentation can be useful for future reference or for sharing with others involved in the project.
+
+9. **Iterate and Refine**: Based on feedback and test results, refine the workflow as needed to ensure it meets the desired objectives.
+
+By following these steps, you can systematically approach the unclear prompt and work towards creating an effective workflow between Jira and GitHub.
+2025-03-25 08:04:52 - INFO - Inserting interaction into database
+2025-03-25 08:05:50 - INFO - Processing request for session_id: test1234, prompt: forgot about the conversations lets start a new workflow
+2025-03-25 08:05:50 - INFO - Fetching history for session_id: test1234
+2025-03-25 08:05:50 - INFO - Invoking workflow graph
+2025-03-25 08:05:50 - INFO - Classifying intent for prompt: forgot about the conversations lets start a new workflow
+2025-03-25 08:06:01 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: boolean-condition, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 08:06:01 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 08:06:02 - INFO - LLM plain text response: 'general'
+2025-03-25 08:06:02 - INFO - Intent: unclear
+2025-03-25 08:06:02 - INFO - Handling unclear intent
+2025-03-25 08:06:06 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: boolean-condition, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 08:06:06 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 08:06:10 - INFO - LLM plain text response: When faced with the unclear prompt "forgot about the conversations lets start a new workflow," here are some steps you can take to gain clarity and proceed effectively:
+
+1. **Clarify the Objective**: Determine what the new workflow is intended to achieve. Is it meant to automate a specific process, streamline communication, or manage tasks?
+
+2. **Ask for More Information**: If possible, reach out to the person who provided the prompt for additional details. Consider asking:
+   - What specific tasks or processes should the new workflow address?
+   - Are there any specific triggers or actions that need to be included?
+   - Is there a preferred tool or method for creating the workflow?
+
+3. **Review Related Documentation**: Look for any documentation or resources related to workflow creation. This might include guides on using specific tools or platforms.
+
+4. **Identify Relevant Components**: Based on the context provided, identify any connectors or tools that might be relevant to the workflow, such as "call-workflow," "trigger-reply," or "terminate."
+
+5. **Create a Hypothesis**: Formulate a hypothesis about what the workflow might involve. For example, it could be a process that starts with a trigger and ends with a specific action.
+
+6. **Draft a Workflow**: Sketch out a basic workflow diagram or list of steps that outline the process. This could include triggers, actions, and any conditions that need to be met.
+
+7. **Conduct a Preliminary Test**: If possible, set up a test environment to trial the workflow. This can help identify any issues or adjustments needed before full implementation.
+
+8. **Document Findings**: Keep a record of your workflow design, any tests conducted, and the results. This documentation can be useful for future reference or for sharing with others involved in the project.
+
+9. **Iterate and Refine**: Based on feedback and test results, refine the workflow as needed to ensure it meets the desired objectives.
+
+By following these steps, you can systematically approach the unclear prompt and work towards creating an effective new workflow.
+2025-03-25 08:06:10 - INFO - Inserting interaction into database
+2025-03-25 09:32:25 - INFO - Processing request for session_id: test1234, prompt: forgot about the conversations lets start a new workflow
+2025-03-25 09:32:25 - INFO - Cache hit for key: cache:test1234:09a0b24270065d5373393819c9340198776f425573ebd37120babad842b00852
+2025-03-25 09:33:03 - INFO - Processing request for session_id: test1234, prompt: forgot about the conversations lets start a new workflow
+2025-03-25 09:33:03 - INFO - Cache hit for key: cache:test1234:09a0b24270065d5373393819c9340198776f425573ebd37120babad842b00852
+2025-03-25 09:33:31 - INFO - Processing request for session_id: test1, prompt: forgot about the conversations lets start a new workflow
+2025-03-25 09:33:31 - INFO - Attempting to connect to PostgreSQL (attempt 1/5)
+2025-03-25 09:33:31 - INFO - Database pool initialized successfully
+2025-03-25 09:33:31 - INFO - Fetching history for session_id: test1
+2025-03-25 09:33:31 - INFO - Invoking workflow graph
+2025-03-25 09:33:31 - INFO - Classifying intent for prompt: forgot about the conversations lets start a new workflow
+2025-03-25 09:34:00 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 09:34:00 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 09:34:00 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 09:34:00 - INFO - LLM plain text response: 'general'
+2025-03-25 09:34:00 - INFO - Intent: unclear
+2025-03-25 09:34:00 - INFO - Handling unclear intent
+2025-03-25 09:34:07 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 09:34:07 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 09:34:14 - INFO - LLM plain text response: To create a new workflow based on the provided prompt and context, follow these steps:
+
+1. **Define the Objective**: Clearly outline what the new workflow aims to achieve. This could involve specific tasks, processes, or outcomes.
+
+2. **Identify Key Components**: Based on the connectors listed, determine which components are relevant to your new workflow. For example, you might need:
+   - **Trigger**: Use `trigger-reply` to initiate the workflow.
+   - **Logic**: Utilize `branch` and `logic-helpers` to manage decision-making processes.
+   - **Loops**: Implement `loop` and `break-loop` for repetitive tasks or iterations.
+   - **Delays**: Use `delay` if certain steps require waiting periods.
+   - **Communication**: Incorporate `pubsub` for message passing or event-driven actions.
+   - **Termination**: Use `terminate` to define the end of the workflow.
+
+3. **Design the Workflow**: Map out the sequence of actions using the identified components. Ensure that each step logically follows from the previous one and contributes to the overall objective.
+
+4. **Implement the Workflow**: Use your workflow management tool to configure each connector and establish the connections between them. Ensure that triggers, conditions, and actions are correctly set up.
+
+5. **Test the Workflow**: Run the workflow in a controlled environment to ensure it functions as expected. Check for any errors or inefficiencies.
+
+6. **Iterate and Improve**: Based on test results, refine the workflow to improve performance or address any issues.
+
+7. **Document the Workflow**: Create documentation that outlines the workflow's purpose, components, and operation for future reference and maintenance.
+
+By following these steps, you can effectively create a new workflow that is clear, structured, and aligned with your goals.
+2025-03-25 09:34:14 - INFO - Inserting interaction into database
+2025-03-25 09:49:18 - INFO - Processing request for session_id: test1, prompt: forgot about the conversations lets start a new workflow
+2025-03-25 09:49:18 - INFO - Cache hit for key: cache:test1:09a0b24270065d5373393819c9340198776f425573ebd37120babad842b00852
+2025-03-25 10:00:36 - INFO - Processing request for session_id: test1, prompt: create a workflow for jira github
+2025-03-25 10:00:36 - INFO - Attempting to connect to PostgreSQL (attempt 1/5)
+2025-03-25 10:00:36 - INFO - Database pool initialized successfully
+2025-03-25 10:00:36 - INFO - Fetching history for session_id: test1
+2025-03-25 10:00:36 - INFO - Invoking workflow graph
+2025-03-25 10:00:36 - INFO - Classifying intent for prompt: create a workflow for jira github
+2025-03-25 10:00:55 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 10:00:55 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 10:00:56 - INFO - LLM plain text response: new_workflow
+2025-03-25 10:00:56 - INFO - Intent: new_workflow
+2025-03-25 10:00:56 - INFO - Generating workflow
+2025-03-25 10:01:00 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: loop, Type: connector, ID: N/A
+2025-03-25 10:01:00 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 10:01:06 - INFO - LLM structured response: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "trigger-reply",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "branch",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "logic-helpers",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "loop",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 358,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-5",
+      "name": "break-loop",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 458,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-6",
+      "name": "delay",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 558,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-7",
+      "name": "pubsub",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 658,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-8",
+      "name": "terminate",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 758,
+        "y": 261
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "action-1",
+      "name": "github-action",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "create-branch"
+      },
+      "metadata": {
+        "title": "Create GitHub Branch",
+        "connector": "GitHub"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    },
+    {
+      "id": "action-2",
+      "name": "jira-action",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create-issue"
+      },
+      "metadata": {
+        "title": "Create Jira Issue",
+        "connector": "Jira"
+      },
+      "ticketing_id": "ticket-jira-placeholder"
+    }
+  ]
+}
+2025-03-25 10:01:06 - INFO - Inserting interaction into database
+2025-03-25 10:26:41 - INFO - Processing request for session_id: test1, prompt: create a workflow for jira github
+2025-03-25 10:26:41 - INFO - Cache hit for key: cache:test1:037025793663f690a85fbad7b379be8fddf7ac88d573b018a4f782a98e405c2f
+2025-03-25 10:26:51 - INFO - Processing request for session_id: test18, prompt: create a workflow for jira github
+2025-03-25 10:26:51 - INFO - Attempting to connect to PostgreSQL (attempt 1/5)
+2025-03-25 10:26:52 - INFO - Database pool initialized successfully
+2025-03-25 10:26:52 - INFO - Fetching history for session_id: test18
+2025-03-25 10:26:52 - INFO - Invoking workflow graph
+2025-03-25 10:26:52 - INFO - Classifying intent for prompt: create a workflow for jira github
+2025-03-25 10:27:07 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 10:27:07 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 10:27:07 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 10:27:07 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 10:27:07 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 10:27:07 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 10:27:07 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 10:27:07 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 10:27:07 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 10:27:07 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 10:27:08 - INFO - LLM plain text response: 'new_workflow'
+2025-03-25 10:27:08 - INFO - Intent: unclear
+2025-03-25 10:27:08 - INFO - Handling unclear intent
+2025-03-25 10:27:08 - INFO - Inserting interaction into database
+2025-03-25 12:13:37 - INFO - Processing request for session_id: test18, prompt: let me start a new workflow
+2025-03-25 12:13:37 - INFO - Fetching history for session_id: test18
+2025-03-25 12:13:37 - INFO - Invoking workflow graph
+2025-03-25 12:13:37 - INFO - Classifying intent for prompt: let me start a new workflow
+2025-03-25 12:13:43 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:13:43 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:13:43 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:13:43 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:13:43 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:13:43 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:13:43 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 12:13:43 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:13:43 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:13:43 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:13:44 - INFO - LLM plain text response: general
+2025-03-25 12:13:44 - INFO - Intent: general
+2025-03-25 12:13:44 - INFO - Handling general query
+2025-03-25 12:13:49 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:13:49 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:13:49 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:13:49 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:13:49 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 12:13:49 - INFO - LLM plain text response: Sure! What kind of workflow would you like to create?
+2025-03-25 12:13:49 - INFO - Inserting interaction into database
+2025-03-25 12:16:46 - INFO - Processing request for session_id: test18, prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:16:46 - INFO - Fetching history for session_id: test18
+2025-03-25 12:16:46 - INFO - Invoking workflow graph
+2025-03-25 12:16:46 - INFO - Classifying intent for prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:16:53 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:16:53 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:16:53 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:16:53 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 12:16:53 - INFO - Component - Name: Bitbucket, Type: scm, ID: b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-25 12:16:54 - INFO - LLM plain text response: 'new_workflow'
+2025-03-25 12:16:54 - INFO - Intent: unclear
+2025-03-25 12:16:54 - INFO - Handling unclear intent
+2025-03-25 12:16:54 - INFO - Inserting interaction into database
+2025-03-25 12:29:35 - INFO - Processing request for session_id: test18, prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:29:35 - INFO - Cache hit for key: cache:test18:4d6c0434e7b2eec0ac7b8ae1e6be7c9b94f20f5977dc214f873f84a9abd0cce0
+2025-03-25 12:29:40 - INFO - Processing request for session_id: test18, prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:29:40 - INFO - Cache hit for key: cache:test18:4d6c0434e7b2eec0ac7b8ae1e6be7c9b94f20f5977dc214f873f84a9abd0cce0
+2025-03-25 12:31:22 - INFO - Processing request for session_id: 3875, prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:31:22 - INFO - Attempting to connect to PostgreSQL (attempt 1/5)
+2025-03-25 12:31:22 - INFO - Database pool initialized successfully
+2025-03-25 12:31:22 - INFO - Fetching history for session_id: 3875
+2025-03-25 12:31:22 - INFO - Invoking workflow graph
+2025-03-25 12:31:22 - INFO - Classifying intent for prompt: create a workflow for jira using either github or bitbucket
+2025-03-25 12:31:36 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:31:36 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:31:36 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:31:36 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:31:36 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:31:36 - INFO - Component - Name: Bitbucket, Type: scm, ID: b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-25 12:31:36 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 12:31:36 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:31:36 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:31:36 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:31:37 - INFO - LLM plain text response: new_workflow
+2025-03-25 12:31:37 - INFO - Intent: new_workflow
+2025-03-25 12:31:37 - INFO - Generating workflow
+2025-03-25 12:31:42 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:31:42 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:31:42 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:31:42 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:31:42 - INFO - Component - Name: Bitbucket, Type: scm, ID: b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-25 12:31:42 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:31:42 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:31:42 - INFO - Component - Name: GitLab, Type: scm, ID: 19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-25 12:31:42 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:31:42 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:31:47 - INFO - LLM structured response: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "start",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "jira-integration",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "github-integration",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "end",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 358,
+        "y": 261
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "action-1",
+      "name": "jira-action",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create-issue"
+      },
+      "metadata": {
+        "title": "Jira Integration",
+        "connector": "Jira"
+      },
+      "ticketing_id": "ticket-jira-placeholder"
+    },
+    {
+      "id": "action-2",
+      "name": "github-action",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "sync-repo"
+      },
+      "metadata": {
+        "title": "GitHub Integration",
+        "connector": "GitHub"
+      },
+      "scm_id": "7ae4ae78-7e98-4995-9e16-547983871d38"
+    }
+  ]
+}
+2025-03-25 12:31:47 - INFO - Inserting interaction into database
+2025-03-25 12:32:25 - INFO - Processing request for session_id: 4356, prompt: let me start a new workflow
+2025-03-25 12:32:25 - INFO - Fetching history for session_id: 4356
+2025-03-25 12:32:25 - INFO - Invoking workflow graph
+2025-03-25 12:32:25 - INFO - Classifying intent for prompt: let me start a new workflow
+2025-03-25 12:32:28 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:32:28 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:32:28 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:32:28 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:32:28 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 12:32:29 - INFO - LLM plain text response: general
+2025-03-25 12:32:29 - INFO - Intent: general
+2025-03-25 12:32:29 - INFO - Handling general query
+2025-03-25 12:32:32 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:32:32 - INFO - Component - Name: logic-helpers, Type: connector, ID: N/A
+2025-03-25 12:32:32 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 12:32:33 - INFO - LLM plain text response: Sure, let's get started! What kind of workflow would you like to create?
+2025-03-25 12:32:33 - INFO - Inserting interaction into database
+2025-03-25 12:32:59 - INFO - Processing request for session_id: 4356, prompt: lets create a workflow for jira github
+2025-03-25 12:32:59 - INFO - Fetching history for session_id: 4356
+2025-03-25 12:32:59 - INFO - Invoking workflow graph
+2025-03-25 12:32:59 - INFO - Classifying intent for prompt: lets create a workflow for jira github
+2025-03-25 12:33:02 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:33:02 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:33:02 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:33:02 - INFO - Component - Name: GitHub, Type: scm, ID: 7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-25 12:33:02 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 12:33:03 - INFO - LLM plain text response: new_workflow
+2025-03-25 12:33:03 - INFO - Intent: new_workflow
+2025-03-25 12:33:03 - INFO - Generating workflow
+2025-03-25 12:33:08 - INFO - Component - Name: call-workflow, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: terminate, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: callable-workflow-response, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: branch, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: delay, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: trigger-reply, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: GitHub Enterprise, Type: scm, ID: fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-25 12:33:08 - INFO - Component - Name: pubsub, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: break-loop, Type: connector, ID: N/A
+2025-03-25 12:33:08 - INFO - Component - Name: GitLab Self-Managed, Type: scm, ID: adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-25 12:33:13 - INFO - LLM structured response: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "start",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "create-jira-ticket",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "github-action",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "end",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 358,
+        "y": 261
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "action-1",
+      "name": "create-jira-ticket",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_ticket"
+      },
+      "metadata": {
+        "title": "Create Jira Ticket",
+        "connector": "Jira"
+      },
+      "ticketing_id": "ticket-jira-placeholder"
+    },
+    {
+      "id": "action-2",
+      "name": "github-action",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "trigger_github_workflow"
+      },
+      "metadata": {
+        "title": "Trigger GitHub Workflow",
+        "connector": "GitHub Enterprise"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    }
+  ]
+}
+2025-03-25 12:33:13 - INFO - Inserting interaction into database
+2025-03-26 08:07:29 - INFO - Processing request for session_id: 4356, prompt: lets create a workflow for jira github
+2025-03-26 08:07:29 - INFO - Cache hit for key: cache:4356:40db5f61bf3844b772293cbfaa8d15d59b8225310d54034d698b6ced16254ef7
+2025-03-26 08:07:51 - INFO - Processing request for session_id: 4356, prompt: my name is paul 
+2025-03-26 08:07:51 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 08:07:52 - INFO - Database pool initialized successfully
+2025-03-26 08:07:52 - INFO - Fetching history for session_id: 4356
+2025-03-26 08:07:52 - ERROR - Unexpected error in process_prompt: column "state" does not exist
+Traceback (most recent call last):
+  File "/app/app.py", line 139, in process_prompt
+    latest_state = await conn.fetchrow(
+                   ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asyncpg/connection.py", line 749, in fetchrow
+    data = await self._execute(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asyncpg/connection.py", line 1794, in _execute
+    result, _ = await self.__execute(
+                ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asyncpg/connection.py", line 1892, in __execute
+    result, stmt = await self._do_execute(
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asyncpg/connection.py", line 1925, in _do_execute
+    stmt = await self._get_statement(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/asyncpg/connection.py", line 433, in _get_statement
+    statement = await self._protocol.prepare(
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "asyncpg/protocol/protocol.pyx", line 166, in prepare
+asyncpg.exceptions.UndefinedColumnError: column "state" does not exist
+2025-03-26 10:19:19 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:19:19 - INFO - Database pool initialized successfully
+2025-03-26 10:19:19 - INFO - Application started with DB and Redis connections
+2025-03-26 10:19:44 - INFO - Processing request for session_id: 4356, prompt: my name is paul 
+2025-03-26 10:19:44 - INFO - Fetching history for session_id: 4356
+2025-03-26 10:19:44 - ERROR - Unexpected error in process_prompt: the JSON object must be str, bytes or bytearray, not NoneType
+Traceback (most recent call last):
+  File "/app/app.py", line 135, in process_prompt
+    state = json.loads(latest_state["state"]) if latest_state else {
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2025-03-26 10:25:09 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:25:10 - INFO - Database pool initialized successfully
+2025-03-26 10:25:10 - INFO - Application started with DB and Redis connections
+2025-03-26 10:25:24 - INFO - Processing request for session_id: 4356, prompt: my name is paul 
+2025-03-26 10:25:24 - INFO - Fetching history for session_id: 4356
+2025-03-26 10:25:24 - ERROR - Unexpected error in process_prompt: the JSON object must be str, bytes or bytearray, not NoneType
+Traceback (most recent call last):
+  File "/app/app.py", line 135, in process_prompt
+    state = json.loads(latest_state["state"]) if latest_state else {
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/json/__init__.py", line 339, in loads
+    raise TypeError(f'the JSON object must be str, bytes or bytearray, '
+TypeError: the JSON object must be str, bytes or bytearray, not NoneType
+2025-03-26 10:29:47 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:29:47 - INFO - Database pool initialized successfully
+2025-03-26 10:29:47 - INFO - Application started with DB and Redis connections
+2025-03-26 10:29:51 - INFO - Processing request for session_id: 4356, prompt: my name is paul 
+2025-03-26 10:29:51 - INFO - Fetching history for session_id: 4356
+2025-03-26 10:29:51 - INFO - Invoking workflow graph
+2025-03-26 10:29:51 - INFO - Classifying intent for prompt: my name is paul 
+2025-03-26 10:30:05 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:30:05 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:30:05 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 10:30:05 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 10:30:05 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 10:30:05 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 10:30:07 - INFO - LLM plain text response: unclear...
+2025-03-26 10:30:07 - INFO - Classified intent: unclear
+2025-03-26 10:30:07 - INFO - Handling unclear intent
+2025-03-26 10:30:07 - INFO - Inserting interaction into database
+2025-03-26 10:30:07 - INFO - Processed prompt successfully for session 4356
+2025-03-26 10:30:23 - INFO - Processing request for session_id: 4356, prompt: what is my name 
+2025-03-26 10:30:23 - INFO - Invoking workflow graph
+2025-03-26 10:30:23 - INFO - Classifying intent for prompt: what is my name 
+2025-03-26 10:30:26 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:30:26 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 10:30:26 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:30:26 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 10:30:26 - INFO - Queried Component: Name=boolean-condition, Type=connector, ID=N/A
+2025-03-26 10:30:26 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:30:27 - INFO - LLM plain text response: unclear...
+2025-03-26 10:30:27 - INFO - Classified intent: unclear
+2025-03-26 10:30:27 - INFO - Handling unclear intent
+2025-03-26 10:30:27 - ERROR - Unexpected error in process_prompt: cannot access local variable 'pool' where it is not associated with a value
+Traceback (most recent call last):
+  File "/app/app.py", line 160, in process_prompt
+    conversation = state["response"]
+    ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pool' where it is not associated with a value
+2025-03-26 10:31:10 - INFO - Processing request for session_id: 4356, prompt: create a workflow for jira ADO 
+2025-03-26 10:31:10 - INFO - Invoking workflow graph
+2025-03-26 10:31:10 - INFO - Classifying intent for prompt: create a workflow for jira ADO 
+2025-03-26 10:31:13 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:31:13 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:31:13 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:31:13 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:31:13 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:31:13 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:31:14 - INFO - LLM plain text response: The intent is 'new_workflow'....
+2025-03-26 10:31:14 - INFO - Classified intent: unclear
+2025-03-26 10:31:14 - INFO - Handling unclear intent
+2025-03-26 10:31:14 - ERROR - Unexpected error in process_prompt: cannot access local variable 'pool' where it is not associated with a value
+Traceback (most recent call last):
+  File "/app/app.py", line 160, in process_prompt
+    conversation = state["response"]
+    ^^^^^^^^^^^^
+UnboundLocalError: cannot access local variable 'pool' where it is not associated with a value
+2025-03-26 10:32:57 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:32:58 - INFO - Database pool initialized successfully
+2025-03-26 10:32:58 - INFO - Application started with DB and Redis connections
+2025-03-26 10:33:01 - INFO - Processing request for session_id: 4356, prompt: create a workflow for jira ADO 
+2025-03-26 10:33:01 - INFO - Invoking workflow graph
+2025-03-26 10:33:01 - INFO - Classifying intent for prompt: create a workflow for jira ADO 
+2025-03-26 10:33:06 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:33:06 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:33:06 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:33:06 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:33:06 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:33:06 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:33:07 - INFO - LLM plain text response: The intent for the prompt "create a workflow for j...
+2025-03-26 10:33:07 - INFO - Classified intent: unclear
+2025-03-26 10:33:07 - INFO - Handling unclear intent
+2025-03-26 10:33:07 - INFO - Inserting interaction into database
+2025-03-26 10:33:07 - INFO - Processed prompt successfully for session 4356
+2025-03-26 10:33:22 - INFO - Processing request for session_id: 4356, prompt: create a workflow for jira github 
+2025-03-26 10:33:22 - INFO - Invoking workflow graph
+2025-03-26 10:33:22 - INFO - Classifying intent for prompt: create a workflow for jira github 
+2025-03-26 10:33:25 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:33:25 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:33:25 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:33:25 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:33:25 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 10:33:25 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:33:26 - INFO - LLM plain text response: The intent is 'new_workflow'....
+2025-03-26 10:33:26 - INFO - Classified intent: unclear
+2025-03-26 10:33:26 - INFO - Handling unclear intent
+2025-03-26 10:33:26 - INFO - Inserting interaction into database
+2025-03-26 10:33:26 - INFO - Processed prompt successfully for session 4356
+2025-03-26 10:33:41 - INFO - Processing request for session_id: 4356, prompt: what is my name 
+2025-03-26 10:33:41 - INFO - Invoking workflow graph
+2025-03-26 10:33:41 - INFO - Classifying intent for prompt: what is my name 
+2025-03-26 10:33:45 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:33:45 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 10:33:45 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:33:45 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 10:33:45 - INFO - Queried Component: Name=boolean-condition, Type=connector, ID=N/A
+2025-03-26 10:33:45 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:33:46 - INFO - LLM plain text response: unclear...
+2025-03-26 10:33:46 - INFO - Classified intent: unclear
+2025-03-26 10:33:46 - INFO - Handling unclear intent
+2025-03-26 10:33:46 - INFO - Inserting interaction into database
+2025-03-26 10:33:46 - INFO - Processed prompt successfully for session 4356
+2025-03-26 10:48:52 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:48:52 - INFO - Database pool initialized successfully
+2025-03-26 10:48:52 - INFO - Application started with DB and Redis connections
+2025-03-26 10:49:03 - INFO - Processing request for session_id: 4356, prompt: create a workflow for jira github 
+2025-03-26 10:49:03 - INFO - Cache hit for key: cache:4356:01b46d867a9079feaf776a7bbe7e22d8d5d48fc22ce4042360f95a8d5f89adbc
+2025-03-26 10:50:02 - INFO - Processing request for session_id: 456, prompt: create a workflow for jira github 
+2025-03-26 10:50:02 - INFO - Fetching history for session_id: 456
+2025-03-26 10:50:02 - INFO - Invoking workflow graph
+2025-03-26 10:50:02 - INFO - Classifying intent for prompt: create a workflow for jira github 
+2025-03-26 10:50:07 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:50:07 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:50:07 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:50:07 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 10:50:07 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:50:07 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:50:07 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:50:08 - INFO - LLM plain text response: new_workflow...
+2025-03-26 10:50:08 - INFO - Classified intent: new_workflow
+2025-03-26 10:50:08 - INFO - Generating workflow
+2025-03-26 10:50:11 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:50:11 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:50:11 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:50:11 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:50:11 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 10:50:11 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:50:11 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:50:15 - INFO - LLM structured response generated
+2025-03-26 10:50:15 - ERROR - Unexpected error in process_prompt: No message found in input
+Traceback (most recent call last):
+  File "/app/app.py", line 154, in process_prompt
+    result = await graph.ainvoke(state)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 2736, in ainvoke
+    async for chunk in self.astream(
+  File "/usr/local/lib/python3.11/site-packages/langgraph/pregel/__init__.py", line 2621, in astream
+    async for _ in runner.atick(
+  File "/usr/local/lib/python3.11/site-packages/langgraph/pregel/runner.py", line 259, in atick
+    await arun_with_retry(
+  File "/usr/local/lib/python3.11/site-packages/langgraph/pregel/retry.py", line 128, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 643, in ainvoke
+    input = await step.ainvoke(input, config, **kwargs)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langgraph/utils/runnable.py", line 431, in ainvoke
+    ret = await asyncio.create_task(coro, context=context)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 256, in _afunc
+    tool_calls, input_type = self._parse_input(input, store)
+                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.11/site-packages/langgraph/prebuilt/tool_node.py", line 443, in _parse_input
+    raise ValueError("No message found in input")
+ValueError: No message found in input
+During task with name 'tools' and id '5fc6c91e-99fe-3b9a-a454-878f11025910'
+2025-03-26 10:59:19 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 10:59:20 - INFO - Database pool initialized successfully
+2025-03-26 10:59:20 - INFO - Application started with DB and Redis connections
+2025-03-26 10:59:20 - INFO - Processing request for session_id: 456, prompt: create a workflow for jira github 
+2025-03-26 10:59:20 - INFO - Fetching history for session_id: 456
+2025-03-26 10:59:20 - INFO - Invoking workflow graph
+2025-03-26 10:59:20 - INFO - Classifying intent for prompt: create a workflow for jira github 
+2025-03-26 10:59:25 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:59:25 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:59:25 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:59:25 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 10:59:25 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:59:25 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 10:59:25 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:59:26 - INFO - LLM plain text response: new_workflow...
+2025-03-26 10:59:26 - INFO - Classified intent: new_workflow
+2025-03-26 10:59:26 - INFO - Generating workflow
+2025-03-26 10:59:30 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:59:30 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 10:59:30 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 10:59:30 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 10:59:30 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 10:59:30 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 10:59:30 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 10:59:35 - INFO - LLM structured response generated
+2025-03-26 10:59:35 - INFO - Inserting interaction into database
+2025-03-26 10:59:35 - INFO - Processed prompt successfully for session 456
+2025-03-26 11:00:14 - INFO - Processing request for session_id: 456, prompt: modify the workflow by adding ADO 
+2025-03-26 11:00:14 - INFO - Invoking workflow graph
+2025-03-26 11:00:14 - INFO - Classifying intent for prompt: modify the workflow by adding ADO 
+2025-03-26 11:00:18 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:00:18 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:00:18 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:00:18 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:00:18 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 11:00:18 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 11:00:18 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:00:18 - INFO - LLM plain text response: modify_workflow...
+2025-03-26 11:00:18 - INFO - Classified intent: modify_workflow
+2025-03-26 11:00:18 - INFO - Modifying workflow
+2025-03-26 11:00:22 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:00:22 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 11:00:22 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:00:22 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 11:00:22 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 11:00:22 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:00:22 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:00:27 - INFO - LLM structured response generated
+2025-03-26 11:00:27 - INFO - Inserting interaction into database
+2025-03-26 11:00:27 - INFO - Processed prompt successfully for session 456
+2025-03-26 11:01:09 - INFO - Processing request for session_id: 456, prompt: what are the available providers for SCM
+2025-03-26 11:01:09 - INFO - Invoking workflow graph
+2025-03-26 11:01:09 - INFO - Classifying intent for prompt: what are the available providers for SCM
+2025-03-26 11:01:13 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:01:13 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 11:01:13 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:01:13 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:01:13 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:01:13 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:01:13 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:01:14 - INFO - LLM plain text response: general...
+2025-03-26 11:01:14 - INFO - Classified intent: general
+2025-03-26 11:01:14 - INFO - Handling general query
+2025-03-26 11:01:17 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:01:17 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 11:01:17 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 11:01:17 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 11:01:17 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 11:01:17 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:01:17 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:01:20 - INFO - LLM plain text response: Here are the available providers for SCM:
+
+1. GitH...
+2025-03-26 11:01:20 - INFO - Inserting interaction into database
+2025-03-26 11:01:20 - INFO - Processed prompt successfully for session 456
+2025-03-26 11:01:57 - INFO - Processing request for session_id: 456, prompt: what are the available providers for SCM
+2025-03-26 11:01:57 - INFO - Cache hit for key: cache:456:72e24b3a14c3a061178d93f743645fa6f54c7f4d69d07cfe01fd1a695c8df2e9
+2025-03-26 11:02:38 - INFO - Processing request for session_id: 56, prompt: what are the available providers for SCM
+2025-03-26 11:02:38 - INFO - Fetching history for session_id: 56
+2025-03-26 11:02:38 - INFO - Invoking workflow graph
+2025-03-26 11:02:38 - INFO - Classifying intent for prompt: what are the available providers for SCM
+2025-03-26 11:02:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:02:42 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 11:02:42 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:02:42 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:02:42 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:02:42 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 11:02:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:02:43 - INFO - LLM plain text response: general...
+2025-03-26 11:02:43 - INFO - Classified intent: general
+2025-03-26 11:02:43 - INFO - Handling general query
+2025-03-26 11:02:46 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:02:46 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 11:02:46 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 11:02:46 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 11:02:46 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 11:02:46 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:02:46 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:02:47 - INFO - LLM plain text response: Here are the available providers for SCM:
+
+1. GitH...
+2025-03-26 11:02:47 - INFO - Inserting interaction into database
+2025-03-26 11:02:47 - INFO - Processed prompt successfully for session 56
+2025-03-26 11:03:23 - INFO - Processing request for session_id: 56, prompt: Hi ,My name is paul
+2025-03-26 11:03:23 - INFO - Invoking workflow graph
+2025-03-26 11:03:23 - INFO - Classifying intent for prompt: Hi ,My name is paul
+2025-03-26 11:03:26 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:03:26 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:03:26 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:03:26 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:03:26 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:03:26 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 11:03:26 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:03:27 - INFO - LLM plain text response: general...
+2025-03-26 11:03:27 - INFO - Classified intent: general
+2025-03-26 11:03:27 - INFO - Handling general query
+2025-03-26 11:03:31 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:03:31 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 11:03:31 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 11:03:31 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:03:31 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 11:03:31 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 11:03:31 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:03:31 - INFO - Inserting interaction into database
+2025-03-26 11:03:31 - INFO - Processed prompt successfully for session 56
+2025-03-26 11:40:03 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 11:40:04 - INFO - Database pool initialized successfully
+2025-03-26 11:40:04 - INFO - Application started with DB and Redis connections
+2025-03-26 11:40:04 - INFO - Processing request for session_id: 56, prompt: 
+2025-03-26 11:40:04 - INFO - Invoking workflow graph
+2025-03-26 11:40:04 - INFO - Classifying intent for prompt: 
+2025-03-26 11:40:04 - INFO - Handling unclear intent
+2025-03-26 11:40:04 - INFO - Inserting interaction into database
+2025-03-26 11:40:04 - INFO - Processed prompt successfully for session 56
+2025-03-26 11:48:22 - INFO - Database pool closed
+2025-03-26 11:48:22 - INFO - Redis connection closed
+2025-03-26 11:48:29 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 11:48:30 - INFO - Database pool initialized successfully
+2025-03-26 11:48:30 - INFO - Application started with DB and Redis connections
+2025-03-26 11:48:42 - INFO - Processing request for session_id: 6, prompt: create a workflow for jira ADO
+2025-03-26 11:48:42 - INFO - Fetching history for session_id: 6
+2025-03-26 11:48:42 - INFO - Invoking workflow graph
+2025-03-26 11:48:42 - INFO - Classifying intent for prompt: create a workflow for jira ADO
+2025-03-26 11:48:49 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:48:49 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:48:49 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:48:49 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:48:49 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 11:48:49 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:48:49 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:48:51 - INFO - LLM plain text response: no...
+2025-03-26 11:48:51 - INFO - Handling unclear intent
+2025-03-26 11:48:51 - INFO - Inserting interaction into database
+2025-03-26 11:48:51 - INFO - Processed prompt successfully for session 6
+2025-03-26 11:54:57 - INFO - Database pool closed
+2025-03-26 11:54:57 - INFO - Redis connection closed
+2025-03-26 11:55:04 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 11:55:05 - INFO - Database pool initialized successfully
+2025-03-26 11:55:05 - INFO - Application started with DB and Redis connections
+2025-03-26 11:55:44 - INFO - Database pool closed
+2025-03-26 11:55:44 - INFO - Redis connection closed
+2025-03-26 11:55:50 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 11:55:51 - INFO - Database pool initialized successfully
+2025-03-26 11:55:51 - INFO - Application started with DB and Redis connections
+2025-03-26 11:56:43 - INFO - Processing request for session_id: 6, prompt: design a workflow where jira event will trigger the workflow and based on the type either invoke bitbucket file or create github membership 
+2025-03-26 11:56:43 - INFO - Invoking workflow graph
+2025-03-26 11:56:43 - INFO - Classifying intent for prompt: design a workflow where jira event will trigger the workflow and based on the type either invoke bitbucket file or create github membership 
+2025-03-26 11:56:48 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:56:48 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:56:48 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 11:56:48 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:56:48 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:56:48 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 11:56:48 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:56:48 - INFO - LLM plain text response: new_workflow...
+2025-03-26 11:56:48 - INFO - Classified intent: new_workflow
+2025-03-26 11:56:48 - INFO - Generating workflow
+2025-03-26 11:56:53 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:56:53 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 11:56:53 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 11:56:53 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 11:56:53 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 11:56:53 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 11:56:53 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 11:56:58 - INFO - LLM structured response generated
+2025-03-26 11:56:58 - INFO - Inserting interaction into database
+2025-03-26 11:56:58 - INFO - Processed prompt successfully for session 6
+2025-03-26 12:13:29 - INFO - Database pool closed
+2025-03-26 12:13:29 - INFO - Redis connection closed
+2025-03-26 12:13:36 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 12:13:37 - INFO - Database pool initialized successfully
+2025-03-26 12:13:37 - INFO - Application started with DB and Redis connections
+2025-03-26 12:15:08 - INFO - Database pool closed
+2025-03-26 12:15:08 - INFO - Redis connection closed
+2025-03-26 12:15:14 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 12:15:14 - INFO - Database pool initialized successfully
+2025-03-26 12:15:14 - INFO - Application started with DB and Redis connections
+2025-03-26 12:16:13 - INFO - Database pool closed
+2025-03-26 12:16:13 - INFO - Redis connection closed
+2025-03-26 12:16:19 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 12:16:19 - INFO - Database pool initialized successfully
+2025-03-26 12:16:19 - INFO - Application started with DB and Redis connections
+2025-03-26 12:16:19 - INFO - Processing request for session_id: 567, prompt: design a workflow where jira event will trigger the workflow and based on the type either invoke bitbucket file or create github membership 
+2025-03-26 12:16:19 - INFO - Fetching history for session_id: 567
+2025-03-26 12:16:19 - INFO - Invoking workflow graph
+2025-03-26 12:16:19 - INFO - Classifying intent for prompt: design a workflow where jira event will trigger the workflow and based on the type either invoke bitbucket file or create github membership 
+2025-03-26 12:16:24 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:16:24 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 12:16:24 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 12:16:24 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 12:16:24 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 12:16:24 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 12:16:24 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:16:26 - INFO - LLM plain text response: new_workflow...
+2025-03-26 12:16:26 - INFO - Classified intent: new_workflow
+2025-03-26 12:16:26 - INFO - Generating workflow
+2025-03-26 12:16:29 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:16:29 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 12:16:29 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 12:16:29 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 12:16:29 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 12:16:29 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 12:16:29 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:16:34 - INFO - LLM structured response generated
+2025-03-26 12:16:34 - INFO - Inserting interaction into database
+2025-03-26 12:16:34 - INFO - Processed prompt successfully for session 567
+2025-03-26 12:17:25 - INFO - Processing request for session_id: 567, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 12:17:25 - INFO - Invoking workflow graph
+2025-03-26 12:17:25 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 12:17:28 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:17:28 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 12:17:28 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 12:17:28 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 12:17:28 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 12:17:28 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 12:17:28 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:17:29 - INFO - LLM plain text response: new_workflow...
+2025-03-26 12:17:29 - INFO - Classified intent: new_workflow
+2025-03-26 12:17:29 - INFO - Generating workflow
+2025-03-26 12:17:32 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:17:32 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 12:17:32 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 12:17:32 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 12:17:32 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 12:17:32 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 12:17:32 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 12:17:38 - INFO - LLM structured response generated
+2025-03-26 12:17:38 - INFO - Inserting interaction into database
+2025-03-26 12:17:38 - INFO - Processed prompt successfully for session 567
+2025-03-26 12:37:14 - INFO - Database pool closed
+2025-03-26 12:37:14 - INFO - Redis connection closed
+2025-03-26 12:37:21 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 12:37:21 - INFO - Database pool initialized successfully
+2025-03-26 12:37:21 - INFO - Application started with DB and Redis connections
+2025-03-26 12:56:39 - INFO - Database pool closed
+2025-03-26 12:56:39 - INFO - Redis connection closed
+2025-03-26 12:56:45 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 12:56:46 - INFO - Database pool initialized successfully
+2025-03-26 12:56:46 - INFO - Application started with DB and Redis connections
+2025-03-26 13:00:10 - INFO - Database pool closed
+2025-03-26 13:00:10 - INFO - Redis connection closed
+2025-03-26 13:00:16 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:00:16 - INFO - Database pool initialized successfully
+2025-03-26 13:00:16 - INFO - Application started with DB and Redis connections
+2025-03-26 13:06:50 - INFO - Database pool closed
+2025-03-26 13:06:50 - INFO - Redis connection closed
+2025-03-26 13:06:55 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:06:56 - INFO - Database pool initialized successfully
+2025-03-26 13:06:56 - INFO - Application started with DB and Redis connections
+2025-03-26 13:07:34 - INFO - Database pool closed
+2025-03-26 13:07:34 - INFO - Redis connection closed
+2025-03-26 13:07:40 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:07:41 - INFO - Database pool initialized successfully
+2025-03-26 13:07:41 - INFO - Application started with DB and Redis connections
+2025-03-26 13:07:42 - INFO - Processing request for session_id: 57, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:07:42 - INFO - Fetching history for session_id: 57
+2025-03-26 13:07:42 - INFO - Invoking workflow graph
+2025-03-26 13:07:42 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:07:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:07:47 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:07:47 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:07:47 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 13:07:47 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:07:47 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:07:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:07:48 - INFO - LLM plain text response: new_workflow...
+2025-03-26 13:07:48 - INFO - Classified intent: new_workflow
+2025-03-26 13:07:48 - INFO - Generating workflow
+2025-03-26 13:07:52 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:07:52 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:07:52 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:07:52 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:07:52 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:07:52 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 13:07:52 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:07:52 - INFO - Inserting interaction into database
+2025-03-26 13:07:52 - INFO - Processed prompt successfully for session 57
+2025-03-26 13:23:46 - INFO - Database pool closed
+2025-03-26 13:23:47 - INFO - Redis connection closed
+2025-03-26 13:23:53 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:23:53 - INFO - Database pool initialized successfully
+2025-03-26 13:23:53 - INFO - Application started with DB and Redis connections
+2025-03-26 13:24:55 - INFO - Database pool closed
+2025-03-26 13:24:55 - INFO - Redis connection closed
+2025-03-26 13:25:01 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:25:01 - INFO - Database pool initialized successfully
+2025-03-26 13:25:01 - INFO - Application started with DB and Redis connections
+2025-03-26 13:25:06 - INFO - Processing request for session_id: 7, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:25:06 - INFO - Fetching history for session_id: 7
+2025-03-26 13:25:06 - INFO - Invoking workflow graph
+2025-03-26 13:25:06 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:25:11 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:25:11 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:25:11 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:25:11 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 13:25:11 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:25:11 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:25:11 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:25:12 - INFO - LLM plain text response: new_workflow...
+2025-03-26 13:25:12 - INFO - Classified intent: new_workflow
+2025-03-26 13:25:12 - INFO - Generating workflow
+2025-03-26 13:25:16 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:25:16 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:25:16 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:25:16 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:25:16 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:25:16 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 13:25:16 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:25:17 - WARNING - Attempt 1/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:25:18 - WARNING - Attempt 2/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:25:21 - ERROR - LLM invocation failed after 3 retries: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/app/services/llm_service.py", line 57, in invoke
+    if not json_response.get("structure") or not json_response.get("data"):
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-03-26 13:25:21 - ERROR - LLM tool extraction failed: LLM error: 'list' object has no attribute 'get'
+2025-03-26 13:25:21 - INFO - Inserting interaction into database
+2025-03-26 13:25:21 - INFO - Processed prompt successfully for session 7
+2025-03-26 13:34:04 - INFO - Database pool closed
+2025-03-26 13:34:04 - INFO - Redis connection closed
+2025-03-26 13:34:11 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:34:11 - INFO - Database pool initialized successfully
+2025-03-26 13:34:11 - INFO - Application started with DB and Redis connections
+2025-03-26 13:34:13 - INFO - Processing request for session_id: 745, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:34:13 - INFO - Fetching history for session_id: 745
+2025-03-26 13:34:13 - INFO - Invoking workflow graph
+2025-03-26 13:34:13 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:34:18 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:34:18 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:34:18 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:34:18 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 13:34:18 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:34:18 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:34:18 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:34:18 - INFO - LLM plain text response: new_workflow...
+2025-03-26 13:34:18 - INFO - Classified intent: new_workflow
+2025-03-26 13:34:18 - INFO - Generating workflow
+2025-03-26 13:34:22 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:34:22 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:34:22 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:34:22 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:34:22 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:34:22 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 13:34:22 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:34:24 - WARNING - Attempt 1/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:34:25 - WARNING - Attempt 2/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:34:28 - ERROR - LLM invocation failed after 3 retries: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/app/services/llm_service.py", line 57, in invoke
+    if not json_response.get("structure") or not json_response.get("data"):
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-03-26 13:34:28 - ERROR - LLM tool extraction failed: LLM error: 'list' object has no attribute 'get'
+2025-03-26 13:34:28 - INFO - Inserting interaction into database
+2025-03-26 13:34:28 - INFO - Processed prompt successfully for session 745
+2025-03-26 13:37:14 - INFO - Database pool closed
+2025-03-26 13:37:14 - INFO - Redis connection closed
+2025-03-26 13:37:20 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:37:20 - INFO - Database pool initialized successfully
+2025-03-26 13:37:20 - INFO - Application started with DB and Redis connections
+2025-03-26 13:37:31 - INFO - Database pool closed
+2025-03-26 13:37:31 - INFO - Redis connection closed
+2025-03-26 13:37:37 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:37:37 - INFO - Database pool initialized successfully
+2025-03-26 13:37:37 - INFO - Application started with DB and Redis connections
+2025-03-26 13:37:37 - INFO - Processing request for session_id: 75, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:37:37 - INFO - Fetching history for session_id: 75
+2025-03-26 13:37:37 - INFO - Invoking workflow graph
+2025-03-26 13:37:37 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 13:37:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:37:42 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:37:42 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:37:42 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 13:37:42 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:37:42 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:37:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:37:43 - INFO - LLM plain text response: new_workflow...
+2025-03-26 13:37:43 - INFO - Classified intent: new_workflow
+2025-03-26 13:37:43 - INFO - Generating workflow
+2025-03-26 13:37:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:37:47 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 13:37:47 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 13:37:47 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 13:37:47 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 13:37:47 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 13:37:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 13:37:48 - WARNING - Attempt 1/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:37:49 - WARNING - Attempt 2/3 failed: 'list' object has no attribute 'get'
+2025-03-26 13:37:52 - ERROR - LLM invocation failed after 3 retries: 'list' object has no attribute 'get'
+Traceback (most recent call last):
+  File "/app/services/llm_service.py", line 57, in invoke
+    if not json_response.get("structure") or not json_response.get("data"):
+           ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'get'
+2025-03-26 13:37:52 - ERROR - LLM tool extraction failed: LLM error: 'list' object has no attribute 'get'
+2025-03-26 13:37:52 - WARNING - No tools identified in prompt by LLM.
+2025-03-26 13:37:52 - INFO - Inserting interaction into database
+2025-03-26 13:37:52 - INFO - Processed prompt successfully for session 75
+2025-03-26 13:41:51 - INFO - Database pool closed
+2025-03-26 13:41:51 - INFO - Redis connection closed
+2025-03-26 13:41:57 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 13:41:57 - INFO - Database pool initialized successfully
+2025-03-26 13:41:57 - INFO - Application started with DB and Redis connections
+2025-03-26 14:18:32 - INFO - Database pool closed
+2025-03-26 14:18:32 - INFO - Redis connection closed
+2025-03-26 14:39:54 - DEBUG - Initialized QueryComponentsTool
+2025-03-26 14:39:54 - DEBUG - Initialized ConnectorRegistry
+2025-03-26 14:39:54 - DEBUG - Initialized SCMActionTool
+2025-03-26 14:41:09 - DEBUG - Initialized QueryComponentsTool
+2025-03-26 14:41:09 - DEBUG - Initialized ConnectorRegistry
+2025-03-26 14:41:09 - DEBUG - Initialized SCMActionTool
+2025-03-26 14:41:09 - DEBUG - Initialized LLMService
+2025-03-26 14:41:09 - DEBUG - Initialized HistoryService with filename: history.json
+2025-03-26 14:41:09 - DEBUG - Initialized WorkflowGraph
+2025-03-26 14:41:09 - DEBUG - Initialized ConnectorRegistry
+2025-03-26 14:41:09 - DEBUG - Initialized SCMExecutor
+2025-03-26 14:41:09 - DEBUG - Initialized WorkflowEngine
+2025-03-26 14:41:09 - INFO - Attempting PostgreSQL connection (attempt 1/5)
+2025-03-26 14:41:09 - INFO - Database pool initialized successfully
+2025-03-26 14:41:09 - INFO - Application started with DB and Redis connections
+2025-03-26 14:41:37 - INFO - Processing request for session_id: 715, prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 14:41:37 - INFO - Fetching history for session_id: 715
+2025-03-26 14:41:37 - DEBUG - Initialized state for session 715 from DB
+2025-03-26 14:41:37 - INFO - Invoking workflow graph
+2025-03-26 14:41:37 - INFO - Classifying intent for prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+2025-03-26 14:41:37 - DEBUG - Querying components: prompt='Prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 14:41:41 - DEBUG - Initialized VectorStore
+2025-03-26 14:41:41 - DEBUG - Querying Pinecone: text='Prompt: design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow 
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 14:41:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 14:41:42 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 14:41:42 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 14:41:42 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 14:41:42 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 14:41:42 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 14:41:42 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 14:41:42 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 14:41:44 - INFO - LLM plain text response: new_workflow...
+2025-03-26 14:41:44 - INFO - Classified intent: new_workflow
+2025-03-26 14:41:44 - DEBUG - Routing intent: new_workflow
+2025-03-26 14:41:44 - INFO - Generating workflow
+2025-03-26 14:41:44 - DEBUG - Querying components: prompt='design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow ', top_k=5
+2025-03-26 14:41:46 - DEBUG - Initialized VectorStore
+2025-03-26 14:41:46 - DEBUG - Querying Pinecone: text='design a workflow where github issue:created event trigger the workflow and based on the ticket type invoke slack's create message or for any other event type send to teams channel. give me workflow ', top_k=5
+2025-03-26 14:41:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 14:41:47 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 14:41:47 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 14:41:47 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 14:41:47 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 14:41:47 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 14:41:47 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 14:41:47 - DEBUG - Invoking LLM with template: Generate a workflow JSON based on the user’s promp..., structured: True
+2025-03-26 14:41:55 - INFO - LLM structured response generated
+2025-03-26 14:41:55 - INFO - Inserting interaction into database
+2025-03-26 14:41:55 - DEBUG - Updated state in Redis for session 715
+2025-03-26 14:41:55 - INFO - Processed prompt successfully for session 715
+2025-03-26 15:22:35 - INFO - Processing request for session_id: 715, prompt: what are the available providers for SCM
+2025-03-26 15:22:35 - DEBUG - Loaded state from Redis for session 715
+2025-03-26 15:22:35 - INFO - Invoking workflow graph
+2025-03-26 15:22:35 - INFO - Classifying intent for prompt: what are the available providers for SCM
+2025-03-26 15:22:35 - DEBUG - Querying components: prompt='Prompt: what are the available providers for SCM
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "github-issue-created-trigger",
+      "type": "trigger",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "decision-node",
+      "type": "decision",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "slack-create-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 161
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "teams-send-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 361
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "github-issue-created",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "issue:created"
+      },
+      "metadata": {
+        "title": "GitHub Issue Created",
+        "connector": "GitHub Enterprise"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    },
+    {
+      "id": "data-2",
+      "name": "slack-create-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_message"
+      },
+      "metadata": {
+        "title": "Create Slack Message",
+        "connector": "call-workflow"
+      }
+    },
+    {
+      "id": "data-3",
+      "name": "teams-send-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "send_message"
+      },
+      "metadata": {
+        "title": "Send Teams Message",
+        "connector": "call-workflow"
+      }
+    }
+  ]
+}', top_k=5
+2025-03-26 15:22:38 - DEBUG - Initialized VectorStore
+2025-03-26 15:22:38 - DEBUG - Querying Pinecone: text='Prompt: what are the available providers for SCM
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "github-issue-created-trigger",
+      "type": "trigger",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "decision-node",
+      "type": "decision",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "slack-create-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 161
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "teams-send-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 361
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "github-issue-created",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "issue:created"
+      },
+      "metadata": {
+        "title": "GitHub Issue Created",
+        "connector": "GitHub Enterprise"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    },
+    {
+      "id": "data-2",
+      "name": "slack-create-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_message"
+      },
+      "metadata": {
+        "title": "Create Slack Message",
+        "connector": "call-workflow"
+      }
+    },
+    {
+      "id": "data-3",
+      "name": "teams-send-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "send_message"
+      },
+      "metadata": {
+        "title": "Send Teams Message",
+        "connector": "call-workflow"
+      }
+    }
+  ]
+}', top_k=5
+2025-03-26 15:22:39 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:22:39 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:22:39 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 15:22:39 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 15:22:39 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:22:39 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 15:22:39 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:22:39 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:22:40 - INFO - LLM plain text response: general...
+2025-03-26 15:22:40 - INFO - Classified intent: general
+2025-03-26 15:22:40 - DEBUG - Routing intent: general
+2025-03-26 15:22:40 - INFO - Handling general query
+2025-03-26 15:22:40 - DEBUG - Querying components: prompt='what are the available providers for SCM', top_k=5
+2025-03-26 15:22:43 - DEBUG - Initialized VectorStore
+2025-03-26 15:22:43 - DEBUG - Querying Pinecone: text='what are the available providers for SCM', top_k=5
+2025-03-26 15:22:44 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:22:44 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 15:22:44 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 15:22:44 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 15:22:44 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 15:22:44 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:22:44 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:22:44 - DEBUG - Invoking LLM with template: Respond to the user’s prompt dynamically:
+Prompt: ..., structured: False
+2025-03-26 15:22:45 - INFO - LLM plain text response: Here are the available providers for SCM:
+
+1. GitH...
+2025-03-26 15:22:45 - INFO - Inserting interaction into database
+2025-03-26 15:22:45 - DEBUG - Updated state in Redis for session 715
+2025-03-26 15:22:45 - INFO - Processed prompt successfully for session 715
+2025-03-26 15:23:37 - INFO - Processing request for session_id: 715, prompt: create a workflow for jira github
+2025-03-26 15:23:37 - DEBUG - Loaded state from Redis for session 715
+2025-03-26 15:23:37 - INFO - Invoking workflow graph
+2025-03-26 15:23:37 - INFO - Classifying intent for prompt: create a workflow for jira github
+2025-03-26 15:23:37 - DEBUG - Querying components: prompt='Prompt: create a workflow for jira github
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "github-issue-created-trigger",
+      "type": "trigger",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "decision-node",
+      "type": "decision",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "slack-create-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 161
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "teams-send-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 361
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "github-issue-created",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "issue:created"
+      },
+      "metadata": {
+        "title": "GitHub Issue Created",
+        "connector": "GitHub Enterprise"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    },
+    {
+      "id": "data-2",
+      "name": "slack-create-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_message"
+      },
+      "metadata": {
+        "title": "Create Slack Message",
+        "connector": "call-workflow"
+      }
+    },
+    {
+      "id": "data-3",
+      "name": "teams-send-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "send_message"
+      },
+      "metadata": {
+        "title": "Send Teams Message",
+        "connector": "call-workflow"
+      }
+    }
+  ]
+}', top_k=5
+2025-03-26 15:23:40 - DEBUG - Initialized VectorStore
+2025-03-26 15:23:40 - DEBUG - Querying Pinecone: text='Prompt: create a workflow for jira github
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "github-issue-created-trigger",
+      "type": "trigger",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "decision-node",
+      "type": "decision",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "slack-create-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 161
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "teams-send-message",
+      "type": "action",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 361
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "github-issue-created",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "issue:created"
+      },
+      "metadata": {
+        "title": "GitHub Issue Created",
+        "connector": "GitHub Enterprise"
+      },
+      "scm_id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2"
+    },
+    {
+      "id": "data-2",
+      "name": "slack-create-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_message"
+      },
+      "metadata": {
+        "title": "Create Slack Message",
+        "connector": "call-workflow"
+      }
+    },
+    {
+      "id": "data-3",
+      "name": "teams-send-message",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "send_message"
+      },
+      "metadata": {
+        "title": "Send Teams Message",
+        "connector": "call-workflow"
+      }
+    }
+  ]
+}', top_k=5
+2025-03-26 15:23:41 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:23:41 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:23:41 - INFO - Queried Component: Name=trigger-reply, Type=connector, ID=N/A
+2025-03-26 15:23:41 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:23:41 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 15:23:41 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 15:23:41 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:23:41 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:23:42 - INFO - LLM plain text response: new_workflow...
+2025-03-26 15:23:42 - INFO - Classified intent: new_workflow
+2025-03-26 15:23:42 - DEBUG - Routing intent: new_workflow
+2025-03-26 15:23:42 - INFO - Generating workflow
+2025-03-26 15:23:42 - DEBUG - Querying components: prompt='create a workflow for jira github', top_k=5
+2025-03-26 15:23:44 - DEBUG - Initialized VectorStore
+2025-03-26 15:23:44 - DEBUG - Querying Pinecone: text='create a workflow for jira github', top_k=5
+2025-03-26 15:23:45 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:23:45 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:23:45 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:23:45 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:23:45 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 15:23:45 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 15:23:45 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:23:45 - DEBUG - Invoking LLM with template: Generate a workflow JSON based on the user’s promp..., structured: True
+2025-03-26 15:23:50 - INFO - LLM structured response generated
+2025-03-26 15:23:50 - INFO - Inserting interaction into database
+2025-03-26 15:23:50 - DEBUG - Updated state in Redis for session 715
+2025-03-26 15:23:50 - INFO - Processed prompt successfully for session 715
+2025-03-26 15:24:33 - INFO - Processing request for session_id: 7151, prompt: create a workflow for jira github
+2025-03-26 15:24:33 - INFO - Fetching history for session_id: 7151
+2025-03-26 15:24:33 - DEBUG - Initialized state for session 7151 from DB
+2025-03-26 15:24:33 - INFO - Invoking workflow graph
+2025-03-26 15:24:33 - INFO - Classifying intent for prompt: create a workflow for jira github
+2025-03-26 15:24:33 - DEBUG - Querying components: prompt='Prompt: create a workflow for jira github
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:24:35 - DEBUG - Initialized VectorStore
+2025-03-26 15:24:35 - DEBUG - Querying Pinecone: text='Prompt: create a workflow for jira github
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:24:36 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:24:36 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:24:36 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:24:36 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:24:36 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:24:36 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 15:24:36 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:24:36 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:24:37 - INFO - LLM plain text response: new_workflow...
+2025-03-26 15:24:37 - INFO - Classified intent: new_workflow
+2025-03-26 15:24:37 - DEBUG - Routing intent: new_workflow
+2025-03-26 15:24:37 - INFO - Generating workflow
+2025-03-26 15:24:37 - DEBUG - Querying components: prompt='create a workflow for jira github', top_k=5
+2025-03-26 15:24:39 - DEBUG - Initialized VectorStore
+2025-03-26 15:24:39 - DEBUG - Querying Pinecone: text='create a workflow for jira github', top_k=5
+2025-03-26 15:24:40 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:24:40 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:24:40 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:24:40 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:24:40 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 15:24:40 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 15:24:40 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:24:40 - DEBUG - Invoking LLM with template: Generate a workflow JSON based on the user’s promp..., structured: True
+2025-03-26 15:24:46 - INFO - LLM structured response generated
+2025-03-26 15:24:46 - INFO - Inserting interaction into database
+2025-03-26 15:24:46 - DEBUG - Updated state in Redis for session 7151
+2025-03-26 15:24:46 - INFO - Processed prompt successfully for session 7151
+2025-03-26 15:32:59 - INFO - Processing request for session_id: 71511, prompt: what are the available providers for scm
+2025-03-26 15:32:59 - INFO - Fetching history for session_id: 71511
+2025-03-26 15:32:59 - DEBUG - Initialized state for session 71511 from DB
+2025-03-26 15:32:59 - INFO - Invoking workflow graph
+2025-03-26 15:32:59 - INFO - Classifying intent for prompt: what are the available providers for scm
+2025-03-26 15:32:59 - DEBUG - Querying components: prompt='Prompt: what are the available providers for scm
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:33:01 - DEBUG - Initialized VectorStore
+2025-03-26 15:33:01 - DEBUG - Querying Pinecone: text='Prompt: what are the available providers for scm
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:33:02 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:02 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 15:33:02 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:33:02 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:33:02 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:33:02 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 15:33:02 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:02 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:33:03 - INFO - LLM plain text response: general...
+2025-03-26 15:33:03 - INFO - Classified intent: general
+2025-03-26 15:33:03 - DEBUG - Routing intent: general
+2025-03-26 15:33:03 - INFO - Handling general query
+2025-03-26 15:33:03 - DEBUG - Querying components: prompt='what are the available providers for scm', top_k=5
+2025-03-26 15:33:06 - DEBUG - Initialized VectorStore
+2025-03-26 15:33:06 - DEBUG - Querying Pinecone: text='what are the available providers for scm', top_k=5
+2025-03-26 15:33:07 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:07 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 15:33:07 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 15:33:07 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 15:33:07 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 15:33:07 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:33:07 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:07 - DEBUG - Invoking LLM with template: Respond to the user’s prompt dynamically:
+Prompt: ..., structured: False
+2025-03-26 15:33:08 - INFO - LLM plain text response: Here are the available providers for SCM:
+
+1. GitH...
+2025-03-26 15:33:08 - INFO - Inserting interaction into database
+2025-03-26 15:33:08 - DEBUG - Updated state in Redis for session 71511
+2025-03-26 15:33:08 - INFO - Processed prompt successfully for session 71511
+2025-03-26 15:33:56 - INFO - Processing request for session_id: 71511, prompt: explain about the providers ADO 
+2025-03-26 15:33:56 - DEBUG - Loaded state from Redis for session 71511
+2025-03-26 15:33:56 - INFO - Invoking workflow graph
+2025-03-26 15:33:56 - INFO - Classifying intent for prompt: explain about the providers ADO 
+2025-03-26 15:33:56 - DEBUG - Querying components: prompt='Prompt: explain about the providers ADO 
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:33:58 - DEBUG - Initialized VectorStore
+2025-03-26 15:33:58 - DEBUG - Querying Pinecone: text='Prompt: explain about the providers ADO 
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:33:59 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:59 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 15:33:59 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 15:33:59 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:33:59 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:33:59 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:33:59 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:33:59 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:34:00 - INFO - LLM plain text response: general...
+2025-03-26 15:34:00 - INFO - Classified intent: general
+2025-03-26 15:34:00 - DEBUG - Routing intent: general
+2025-03-26 15:34:00 - INFO - Handling general query
+2025-03-26 15:34:00 - DEBUG - Querying components: prompt='explain about the providers ADO ', top_k=5
+2025-03-26 15:34:02 - DEBUG - Initialized VectorStore
+2025-03-26 15:34:02 - DEBUG - Querying Pinecone: text='explain about the providers ADO ', top_k=5
+2025-03-26 15:34:03 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:34:03 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 15:34:03 - INFO - Queried Component: Name=ADO, Type=scm, ID=f188473b-4f15-4526-b2ba-d480a9ed3024
+2025-03-26 15:34:03 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:34:03 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 15:34:03 - INFO - Queried Component: Name=Bitbucket, Type=scm, ID=b5ce7dfc-ca26-47f9-bdad-10218c967907
+2025-03-26 15:34:03 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:34:03 - DEBUG - Invoking LLM with template: Respond to the user’s prompt dynamically:
+Prompt: ..., structured: False
+2025-03-26 15:34:06 - INFO - LLM plain text response: ADO, or Azure DevOps, is a source control manageme...
+2025-03-26 15:34:06 - INFO - Inserting interaction into database
+2025-03-26 15:34:06 - DEBUG - Updated state in Redis for session 71511
+2025-03-26 15:34:06 - INFO - Processed prompt successfully for session 71511
+2025-03-26 15:34:51 - INFO - Processing request for session_id: 71511, prompt: create a workflow for jira github
+2025-03-26 15:34:51 - DEBUG - Loaded state from Redis for session 71511
+2025-03-26 15:34:51 - INFO - Invoking workflow graph
+2025-03-26 15:34:51 - INFO - Classifying intent for prompt: create a workflow for jira github
+2025-03-26 15:34:51 - DEBUG - Querying components: prompt='Prompt: create a workflow for jira github
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:34:54 - DEBUG - Initialized VectorStore
+2025-03-26 15:34:54 - DEBUG - Querying Pinecone: text='Prompt: create a workflow for jira github
+History: 
+Workflow: No workflow', top_k=5
+2025-03-26 15:34:55 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:34:55 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:34:55 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:34:55 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:34:55 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:34:55 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 15:34:55 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:34:55 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:34:56 - INFO - LLM plain text response: new_workflow...
+2025-03-26 15:34:56 - INFO - Classified intent: new_workflow
+2025-03-26 15:34:56 - DEBUG - Routing intent: new_workflow
+2025-03-26 15:34:56 - INFO - Generating workflow
+2025-03-26 15:34:56 - DEBUG - Querying components: prompt='create a workflow for jira github', top_k=5
+2025-03-26 15:34:59 - DEBUG - Initialized VectorStore
+2025-03-26 15:34:59 - DEBUG - Querying Pinecone: text='create a workflow for jira github', top_k=5
+2025-03-26 15:34:59 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:34:59 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:34:59 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:34:59 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:34:59 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 15:34:59 - INFO - Queried Component: Name=delay, Type=connector, ID=N/A
+2025-03-26 15:35:00 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:35:00 - DEBUG - Invoking LLM with template: Generate a workflow JSON based on the user’s promp..., structured: True
+2025-03-26 15:35:05 - INFO - LLM structured response generated
+2025-03-26 15:35:05 - INFO - Inserting interaction into database
+2025-03-26 15:35:05 - DEBUG - Updated state in Redis for session 71511
+2025-03-26 15:35:05 - INFO - Processed prompt successfully for session 71511
+2025-03-26 15:35:31 - INFO - Processing request for session_id: 71511, prompt: explain about the github-Enterprise
+2025-03-26 15:35:31 - DEBUG - Loaded state from Redis for session 71511
+2025-03-26 15:35:31 - INFO - Invoking workflow graph
+2025-03-26 15:35:31 - INFO - Classifying intent for prompt: explain about the github-Enterprise
+2025-03-26 15:35:31 - DEBUG - Querying components: prompt='Prompt: explain about the github-Enterprise
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "start",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "create-jira-issue",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "create-github-branch",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "end",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 358,
+        "y": 261
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "create-jira-issue",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_issue"
+      },
+      "metadata": {
+        "title": "Create Jira Issue",
+        "connector": "callable-workflow-response"
+      },
+      "ticketing_id": "ticket-jira-placeholder"
+    },
+    {
+      "id": "data-2",
+      "name": "create-github-branch",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "create_branch"
+      },
+      "metadata": {
+        "title": "Create GitHub Branch",
+        "connector": "call-workflow"
+      },
+      "scm_id": "adf1f67b-e369-4701-af47-d9733ef27326"
+    }
+  ]
+}', top_k=5
+2025-03-26 15:35:34 - DEBUG - Initialized VectorStore
+2025-03-26 15:35:34 - DEBUG - Querying Pinecone: text='Prompt: explain about the github-Enterprise
+History: 
+Workflow: {
+  "structure": [
+    {
+      "id": "node-1",
+      "name": "start",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 58,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-2",
+      "name": "create-jira-issue",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 158,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-3",
+      "name": "create-github-branch",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 258,
+        "y": 261
+      }
+    },
+    {
+      "id": "node-4",
+      "name": "end",
+      "type": "normal",
+      "content": {},
+      "position": {
+        "x": 358,
+        "y": 261
+      }
+    }
+  ],
+  "data": [
+    {
+      "id": "data-1",
+      "name": "create-jira-issue",
+      "type": "EXTERNAL_SOURCE",
+      "version": "1.0",
+      "properties": {
+        "action": "create_issue"
+      },
+      "metadata": {
+        "title": "Create Jira Issue",
+        "connector": "callable-workflow-response"
+      },
+      "ticketing_id": "ticket-jira-placeholder"
+    },
+    {
+      "id": "data-2",
+      "name": "create-github-branch",
+      "type": "SCM_ACTION",
+      "version": "1.0",
+      "properties": {
+        "action": "create_branch"
+      },
+      "metadata": {
+        "title": "Create GitHub Branch",
+        "connector": "call-workflow"
+      },
+      "scm_id": "adf1f67b-e369-4701-af47-d9733ef27326"
+    }
+  ]
+}', top_k=5
+2025-03-26 15:35:35 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:35:35 - INFO - Queried Component: Name=branch, Type=connector, ID=N/A
+2025-03-26 15:35:35 - INFO - Queried Component: Name=terminate, Type=connector, ID=N/A
+2025-03-26 15:35:35 - INFO - Queried Component: Name=call-workflow, Type=connector, ID=N/A
+2025-03-26 15:35:35 - INFO - Queried Component: Name=callable-workflow-response, Type=connector, ID=N/A
+2025-03-26 15:35:35 - INFO - Queried Component: Name=loop, Type=connector, ID=N/A
+2025-03-26 15:35:35 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:35:35 - DEBUG - Invoking LLM with template: Classify the user’s intent based on the prompt, hi..., structured: False
+2025-03-26 15:35:35 - INFO - LLM plain text response: general...
+2025-03-26 15:35:35 - INFO - Classified intent: general
+2025-03-26 15:35:35 - DEBUG - Routing intent: general
+2025-03-26 15:35:35 - INFO - Handling general query
+2025-03-26 15:35:35 - DEBUG - Querying components: prompt='explain about the github-Enterprise', top_k=5
+2025-03-26 15:35:39 - DEBUG - Initialized VectorStore
+2025-03-26 15:35:39 - DEBUG - Querying Pinecone: text='explain about the github-Enterprise', top_k=5
+2025-03-26 15:35:40 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:35:40 - INFO - Queried Component: Name=GitHub Enterprise, Type=scm, ID=fa66342a-3e06-4edb-8dd2-a2014e0cd7f2
+2025-03-26 15:35:40 - INFO - Queried Component: Name=GitLab Self-Managed, Type=scm, ID=adf1f67b-e369-4701-af47-d9733ef27326
+2025-03-26 15:35:40 - INFO - Queried Component: Name=GitHub, Type=scm, ID=7ae4ae78-7e98-4995-9e16-547983871d38
+2025-03-26 15:35:40 - INFO - Queried Component: Name=GitLab, Type=scm, ID=19078c0a-c343-4087-89ae-87ab06d0280a
+2025-03-26 15:35:40 - INFO - Queried Component: Name=pubsub, Type=connector, ID=N/A
+2025-03-26 15:35:40 - INFO - Pinecone query successful, retrieved 5 results
+2025-03-26 15:35:40 - DEBUG - Invoking LLM with template: Respond to the user’s prompt dynamically:
+Prompt: ..., structured: False
+2025-03-26 15:35:43 - INFO - LLM plain text response: GitHub Enterprise is a version of GitHub designed ...
+2025-03-26 15:35:43 - INFO - Inserting interaction into database
+2025-03-26 15:35:43 - DEBUG - Updated state in Redis for session 71511
+2025-03-26 15:35:43 - INFO - Processed prompt successfully for session 71511

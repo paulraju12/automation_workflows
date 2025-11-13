@@ -1,0 +1,19 @@
+pinecone>=3.2.2  # Updated for latest Pinecone features
+sentence-transformers>=3.0.1  # Latest stable, compatible with torch
+torch>=2.4.1  # Updated for better performance
+openai>=1.58.1  # Minimum for langchain-openai
+python-dotenv>=1.0.1  # Updated to resolve browser-use conflict
+requests>=2.32.3  # Minimum for compatibility with multiple packages
+uvicorn==0.29.0
+asyncpg==0.29.0
+psycopg2-binary==2.9.9
+langchain>=0.3.0
+pydantic>=2.0.0
+fastapi>=0.103.0
+uvicorn>=0.23.0
+asyncpg>=0.28.0
+redis>=5.0.0
+datadog>=0.47.0
+langchain-core>=0.3.0
+langgraph>=0.0.30
+langchain-openai>=0.1.0

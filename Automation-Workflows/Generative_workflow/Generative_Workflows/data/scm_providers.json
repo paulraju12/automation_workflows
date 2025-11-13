@@ -1,0 +1,414 @@
+{
+    "pagination": {
+        "total": 6,
+        "limit": 33,
+        "offset": 0
+    },
+    "data": [
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/19078c0a-c343-4087-89ae-87ab06d0280a",
+            "type": "SCM",
+            "id": "19078c0a-c343-4087-89ae-87ab06d0280a",
+            "name": "GitLab",
+            "description": "Gitlab scm provider",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SAAS"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png"
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://gitlab.com/users/sign_up",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "type": "STANDARD",
+                "id": "cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "name": "Snyk"
+            },
+            "changeLog": {
+                "createdDateTime": "2024-03-20T02:48:05.133+00:00",
+                "lastUpdatedDateTime": "2024-03-20T02:48:05.133+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://gitlab.com/users/sign_up",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        },
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/7ae4ae78-7e98-4995-9e16-547983871d38",
+            "type": "SCM",
+            "id": "7ae4ae78-7e98-4995-9e16-547983871d38",
+            "name": "GitHub",
+            "description": "Github scm provider",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SAAS"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png"
+            },
+            "rateLimitConfig": {
+                "enabled": true,
+                "type": "RESPONSE_HEADER",
+                "mapperAttributes": {
+                    "rateLimit": {
+                        "label": "x-ratelimit-limit",
+                        "unit": "requests_per_hour"
+                    },
+                    "rateUsed": {
+                        "label": "x-ratelimit-used"
+                    },
+                    "rateRemaining": {
+                        "label": "x-ratelimit-remaining"
+                    },
+                    "resetTime": {
+                        "label": "x-ratelimit-reset",
+                        "unit": {
+                            "type": "epoch_seconds"
+                        }
+                    }
+                }
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://github.com/login",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "type": "STANDARD",
+                "id": "cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "name": "Snyk"
+            },
+            "changeLog": {
+                "createdDateTime": "2024-03-18T13:21:47.430+00:00",
+                "lastUpdatedDateTime": "2024-03-18T13:21:47.430+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://github.com/login",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        },
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/adf1f67b-e369-4701-af47-d9733ef27326",
+            "type": "SCM",
+            "id": "adf1f67b-e369-4701-af47-d9733ef27326",
+            "name": "GitLab Self-Managed",
+            "description": "Integrate customer GitLab self-managed",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SELF_MANAGED"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/gitlab/gitlab_128.png"
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://gitlab.com/users/sign_up",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    },
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "Choose specific GitLab Self-Managed versions for your customers,ensuring they can only select the version you've configured.",
+                        "link": {
+                            "type": "INTERNAL",
+                            "name": "",
+                            "rel": "serviceversion",
+                            "href": "https://serviceprofile-manager/api/v1/services",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/266b6cdb-e34d-4a8d-8be6-ca30b8b09998",
+                "type": "STANDARD",
+                "id": "4a321a7d-ee19-4e4a-b096-7de51c9e279e",
+                "name": "Org_kousar"
+            },
+            "changeLog": {
+                "createdDateTime": "2024-08-10T14:47:33.024+00:00",
+                "lastUpdatedDateTime": "2024-08-10T14:47:33.024+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://gitlab.com/users/sign_up",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        },
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/b5ce7dfc-ca26-47f9-bdad-10218c967907",
+            "type": "SCM",
+            "id": "b5ce7dfc-ca26-47f9-bdad-10218c967907",
+            "name": "Bitbucket",
+            "description": "BitBucket scm provider",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SAAS"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/bitbucket/bitbucket_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/bitbucket/bitbucket_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/bitbucket/bitbucket_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/bitbucket/bitbucket_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/bitbucket/bitbucket_128.png"
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://bitbucket.org/account/signin",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "type": "STANDARD",
+                "id": "cf18d244-c71f-419e-9f00-8bde97a2cc11",
+                "name": "Snyk"
+            },
+            "changeLog": {
+                "createdDateTime": "2024-03-20T02:44:56.003+00:00",
+                "lastUpdatedDateTime": "2024-03-20T02:44:56.003+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://bitbucket.org/account/signin",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        },
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/f188473b-4f15-4526-b2ba-d480a9ed3024",
+            "type": "SCM",
+            "id": "f188473b-4f15-4526-b2ba-d480a9ed3024",
+            "name": "ADO",
+            "description": "ADO scm provider",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SAAS"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/azure_devops/azure_devops_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/azure_devops/azure_devops_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/azure_devops/azure_devops_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/azure_devops/azure_devops_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/azure_devops/azure_devops_128.png"
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://azure.microsoft.com/en-us/products/devops/?nav=min",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/28038cda-b826-45a5-93d5-4aa1e50510ab",
+                "type": "STANDARD",
+                "id": "28038cda-b826-45a5-93d5-4aa1e50510ab",
+                "name": "Snyk Test"
+            },
+            "changeLog": {
+                "createdDateTime": "2024-03-23T09:12:43.813+00:00",
+                "lastUpdatedDateTime": "2024-03-23T09:12:43.813+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://azure.microsoft.com/en-us/products/devops/?nav=min",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        },
+        {
+            "href": "http://api.unizo.io/api/v1/serviceProfiles/fa66342a-3e06-4edb-8dd2-a2014e0cd7f2",
+            "type": "SCM",
+            "id": "fa66342a-3e06-4edb-8dd2-a2014e0cd7f2",
+            "name": "GitHub Enterprise",
+            "description": "Integrate customer self-managed Github enterprise",
+            "state": "ACTIVE",
+            "visibility": "PUBLIC",
+            "deploymentModel": {
+                "type": "SELF_MANAGED"
+            },
+            "image": {
+                "original": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png",
+                "xSmall": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_32.png",
+                "small": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_64.png",
+                "medium": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png",
+                "large": "https://unzpublicpaas.blob.core.windows.net/imgs/github/github_128.png"
+            },
+            "assistanceInfo": {
+                "processSteps": [
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "How to get a sandbox:",
+                        "link": {
+                            "type": "EXTERNAL",
+                            "name": "Sign up here!",
+                            "rel": "doc",
+                            "href": "https://github.com/login",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    },
+                    {
+                        "title": "Setup guidelines",
+                        "subTitle": "",
+                        "description": "Choose specific GitHub Enterprise versions for your customers,ensuring they can only select the version you've configured.",
+                        "link": {
+                            "type": "INTERNAL",
+                            "name": "",
+                            "rel": "serviceversion",
+                            "href": "https://serviceprofile-manager/api/v1/services",
+                            "method": "GET",
+                            "contentType": "application/json",
+                            "authenticate": true
+                        }
+                    }
+                ]
+            },
+            "notifications": [],
+            "tags": [],
+            "attributes": [],
+            "organization": {
+                "href": "http://api.platform.com/api/v1/organizations/266b6cdb-e34d-4a8d-8be6-ca30b8b09998",
+                "type": "STANDARD",
+                "id": "4a321a7d-ee19-4e4a-b096-7de51c9e279e",
+                "name": "Org_kousar"
+            },
+            "changeLog": {
+                "createdDateTime": "2024ADO-08-02T11:48:21.769+00:00",
+                "lastUpdatedDateTime": "2024-08-02T11:48:21.769+00:00"
+            },
+            "links": [
+                {
+                    "name": "Sign up here!",
+                    "rel": "doc",
+                    "href": "https://github.com/login",
+                    "method": "GET",
+                    "contentType": "application/json",
+                    "authenticate": true
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,451 @@
+{
+  "data": {
+    "viewer": {
+      "__typename": "Viewer",
+      "connectorSnippets": {
+        "edges": [
+          {
+            "node": {
+              "name": "boolean-condition",
+              "data": {
+                "name": "boolean-condition",
+                "properties": "{\"conditions\":{\"type\":\"array\",\"value\":[{\"type\":\"object\",\"value\":{\"value1\":{\"type\":\"string\",\"value\":\"\"},\"comparison_type\":{\"type\":\"string\",\"value\":\"===\"},\"value2\":{\"type\":\"string\",\"value\":\"\"}}}]},\"strictness\":{\"type\":\"string\",\"value\":\"All\"}}",
+                "metadata": {
+                  "connector": {
+                    "name": "boolean-condition",
+                    "description": "Check a condition and split the path based on the outcome",
+                    "version": "2.3",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "boolean_condition",
+                  "title": "Boolean Condition",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "boolean-condition",
+                "type": "branch",
+                "content": "{\"true\":[],\"false\":[]}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "logic",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/split.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "branch",
+              "data": {
+                "name": "branch",
+                "properties": "{\"value\":{\"type\":\"string\",\"value\":\"\"},\"branches\":{\"type\":\"array\",\"value\":[{\"type\":\"object\",\"value\":{\"value\":{\"type\":\"string\",\"value\":\"\"},\"label\":{\"type\":\"string\",\"value\":\"Branch 1\"}}}]}}",
+                "metadata": {
+                  "connector": {
+                    "name": "branch",
+                    "description": "Split the workflow into multiple branches based on conditional logic",
+                    "version": "1.3",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "simple",
+                  "title": "Branch",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "branch",
+                "type": "branch",
+                "content": "{\"branch1\":[],\"__default__\":[]}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "community",
+                "logic",
+                "core",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/hierarchy-1.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "break-loop",
+              "data": {
+                "name": "break-loop",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "break-loop",
+                    "description": "Break out of a loop when a given condition is met",
+                    "version": "1.1",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "break",
+                  "title": "Break Loop",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "break-loop",
+                "type": "break",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "logic",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/arrow-return.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "callable-workflow-response",
+              "data": {
+                "name": "callable-workflow-response",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "callable-workflow-response",
+                    "description": "Send a response to the parent workflow",
+                    "version": "1.0",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "response",
+                  "title": "Callable response",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "callable-workflow-response",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "response",
+                "community",
+                "core",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/upload-box-4.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "call-workflow",
+              "data": {
+                "name": "call-workflow",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "call-workflow",
+                    "description": "Trigger any workflow which has a callable trigger",
+                    "version": "2.0",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "fire_and_forget",
+                  "title": "Call Workflow",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "call-workflow",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "logic",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/flash-1.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "delay",
+              "data": {
+                "name": "delay",
+                "properties": "{\"time_unit\":{\"type\":\"string\",\"value\":\"minutes\"},\"delay_value\":{\"type\":\"integer\",\"value\":1}}",
+                "metadata": {
+                  "connector": {
+                    "name": "delay",
+                    "description": "Add a time delay to the workflow",
+                    "version": "1.0",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "delay",
+                  "title": "Delay",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "delay",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "logic",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/hourglass-1.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "logic-helpers",
+              "data": {
+                "name": "logic-helpers",
+                "properties": "{\"initial_condition\":{\"type\":\"object\",\"value\":{\"not\":{\"type\":\"boolean\",\"value\":false}}},\"initial_not\":{\"type\":\"boolean\",\"value\":false}}",
+                "metadata": {
+                  "connector": {
+                    "name": "logic-helpers",
+                    "description": "A set of logic helpers",
+                    "version": "2.1",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "evaluation",
+                  "title": "Logic Helpers",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "logic-helpers",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "helper",
+                "cat-helpers",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/exposure-level-add-subtract.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "loop",
+              "data": {
+                "name": "loop",
+                "properties": "{\"array\":{\"type\":\"array\",\"value\":[]}}",
+                "metadata": {
+                  "connector": {
+                    "name": "loop",
+                    "description": "Loop through a list of items or the properties of an object",
+                    "version": "1.3",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "loop_array",
+                  "title": "Loop Collection",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "loop",
+                "type": "loop",
+                "content": "{\"_loop\":[]}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "community",
+                "logic",
+                "core",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/synchronize-1.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "pubsub",
+              "data": {
+                "name": "pubsub",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "pubsub",
+                    "description": "Publish data to be consumed by a pub/sub trigger",
+                    "version": "1.0",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "publish",
+                  "title": "Pub/Sub",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "pubsub",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/rss-feed-box.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "terminate",
+              "data": {
+                "name": "terminate",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "terminate",
+                    "description": "Immediately terminate the current run of a workflow",
+                    "version": "1.1",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "terminate_run",
+                  "title": "Terminate",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "terminate",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "core",
+                "logic",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/remove-circle-1.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          },
+          {
+            "node": {
+              "name": "trigger-reply",
+              "data": {
+                "name": "trigger-reply",
+                "properties": "{}",
+                "metadata": {
+                  "connector": {
+                    "name": "trigger-reply",
+                    "description": "Send a signal to the trigger to finish and process any response data",
+                    "version": "1.1",
+                    "__typename": "ConnectorSnippetDataMetadataConnector"
+                  },
+                  "matched_operation": null,
+                  "operation": "trigger-reply",
+                  "title": "Trigger Event Reply",
+                  "__typename": "ConnectorSnippetDataMetadata"
+                },
+                "__typename": "ConnectorSnippetData"
+              },
+              "structure": {
+                "name": "trigger-reply",
+                "type": "normal",
+                "content": "{}",
+                "__typename": "ConnectorSnippetStructure"
+              },
+              "isTrigger": false,
+              "isDraft": false,
+              "isPrivate": false,
+              "tags": [
+                "response",
+                "community",
+                "core",
+                "cat-logic"
+              ],
+              "icon": "https://s3.amazonaws.com/images.tray.io/icons/streamline/upload-box-4.svg",
+              "__typename": "ConnectorSnippet"
+            },
+            "__typename": "ConnectorSnippetEdge"
+          }
+        ],
+        "__typename": "ConnectorSnippetConnection",
+        "pageInfo": {
+          "endCursor": "MTE",
+          "startCursor": "MQ==",
+          "hasNextPage": false,
+          "hasPreviousPage": false,
+          "__typename": "PageInfo"
+        }
+      }
+    }
+  }
+  }

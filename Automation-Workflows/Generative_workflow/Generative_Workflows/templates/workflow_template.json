@@ -1,0 +1,51 @@
+{
+  "name": "WorkflowStructure",
+  "description": "Template for generated workflows",
+  "version": "1.0",
+  "structure": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "type": {"type": "string"},
+        "content": {"type": "object"},
+        "position": {
+          "type": "object",
+          "properties": {
+            "x": {"type": "integer"},
+            "y": {"type": "integer"}
+          }
+        }
+      },
+      "required": ["id", "name", "type", "content", "position"]
+    }
+  },
+  "data": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {"type": "string"},
+        "name": {"type": "string"},
+        "type": {"type": "string"},
+        "version": {"type": "string"},
+        "properties": {"type": "object"},
+        "metadata": {
+          "type": "object",
+          "properties": {
+            "title": {"type": "string"},
+            "connector": {
+              "type": "object",
+              "properties": {"name": {"type": "string"}}
+            }
+          }
+        },
+        "scm_id": {"type": "string", "nullable": true},
+        "ticketing_id": {"type": "string", "nullable": true}
+      },
+      "required": ["id", "name", "type", "version", "properties", "metadata"]
+    }
+  }
+}
