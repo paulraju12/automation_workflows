@@ -4,32 +4,38 @@ from services.llm_service import LLMService
 from services.history_service import HistoryService
 from agents.tools import query_components_tool
 from utils.logger import logger
-from typing import Annotated, TypedDict, Literal
+from typing import Annotated, Any, Callable, Dict, List, Literal, Optional, Tuple, TypedDict
 import json
 import time
 import os
 from functools import wraps
 import re
 
+
 class AgentState(TypedDict):
     """State schema for the workflow graph."""
     prompt: str
-    history: Annotated[list[tuple[str, str]], "User-agent interaction history"]
-    workflow: dict
+    history: Annotated[List[Tuple[str, str]], "User-agent interaction history"]
+    workflow: Dict[str, Any]
     intent: Literal["new_workflow", "modify_workflow", "unclear", "general"]
     response: str
     awaiting_input: bool
     next_question: str
-    error: Annotated[dict, "Error details if any"]
+    error: Annotated[Dict[str, Any], "Error details if any"]
 
-def enterprise_error_handler(func):
+
+def enterprise_error_handler(func: Callable[..., AgentState]) -> Callable[..., AgentState]:
     """Decorator for enterprise-grade error handling and logging."""
     @wraps(func)
-    def wrapper(self, state):
+    def wrapper(self: "WorkflowGraph", state: AgentState) -> AgentState:
         try:
             return func(self, state)
         except Exception as e:
-            error_details = {"message": str(e), "traceback": traceback.format_exc(), "function": func.__name__}
+            error_details: Dict[str, str] = {
+                "message": str(e),
+                "traceback": traceback.format_exc(),
+                "function": func.__name__,
+            }
             logger.error(f"Error in {func.__name__}: {error_details}", extra=error_details)
             state["response"] = "An error occurred. Please try again or clarify."
             state["intent"] = "unclear"
@@ -38,13 +44,25 @@ def enterprise_error_handler(func):
             return state
     return wrapper
 
+
 class WorkflowGraph:
     """Manages the workflow state graph for multi-agent interactions."""
-    def __init__(self, llm_service=None, history_service=None):
-        self.llm_service = llm_service or LLMService()
-        self.history_service = history_service or HistoryService()
-        self.max_retries = int(os.getenv("MAX_WORKFLOW_RETRIES", 3))
-        self.timeout_seconds = int(os.getenv("WORKFLOW_TIMEOUT_SECONDS", 30))
+
+    llm_service: LLMService
+    history_service: HistoryService
+    max_retries: int
+    timeout_seconds: int
+    graph: Any  # Compiled LangGraph
+
+    def __init__(
+        self,
+        llm_service: Optional[LLMService] = None,
+        history_service: Optional[HistoryService] = None,
+    ) -> None:
+        self.llm_service: LLMService = llm_service or LLMService()
+        self.history_service: HistoryService = history_service or HistoryService()
+        self.max_retries: int = int(os.getenv("MAX_WORKFLOW_RETRIES", 3))
+        self.timeout_seconds: int = int(os.getenv("WORKFLOW_TIMEOUT_SECONDS", 30))
         self.graph = self._build_graph()
         logger.debug("Initialized WorkflowGraph")
 
@@ -225,23 +243,26 @@ class WorkflowGraph:
         state["awaiting_input"] = True
         return state
 
-    def _invoke_with_retry(self, template: str, structured: bool, retries: int = None, **kwargs) -> str:
+    def _invoke_with_retry(
+        self, template: str, structured: bool, retries: Optional[int] = None, **kwargs: Any
+    ) -> str:
         """Invoke LLM with retry logic and exponential backoff."""
-        retries = retries if retries is not None else self.max_retries
-        for attempt in range(retries):
+        effective_retries: int = retries if retries is not None else self.max_retries
+        for attempt in range(effective_retries):
             try:
                 return self.llm_service.invoke(template, structured, **kwargs)
             except Exception as e:
-                if attempt == retries - 1:
+                if attempt == effective_retries - 1:
                     raise
-                logger.warning(f"Attempt {attempt + 1}/{retries} failed: {e}")
+                logger.warning(f"Attempt {attempt + 1}/{effective_retries} failed: {e}")
                 time.sleep(2 ** attempt)
+        raise RuntimeError("Retry loop exited unexpectedly")
 
     def _get_pinecone_context(self, query: str, history: str = "") -> str:
         """Retrieve context from Pinecone vector store."""
         try:
-            results = query_components_tool._run(prompt=query, top_k=5)
-            context = "\n".join(
+            results: List[Dict[str, Any]] = query_components_tool._run(prompt=query, top_k=5)
+            context: str = "\n".join(
                 f"Name: {r.get('metadata', {}).get('name', 'unknown')}, "
                 f"Type: {r.get('metadata', {}).get('type', 'unknown')}, "
                 f"ID: {r.get('metadata', {}).get('id', 'N/A')}"
